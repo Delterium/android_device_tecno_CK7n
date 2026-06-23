@@ -1,4 +1,5 @@
 # Device tree for the TECNO CAMON 20 Pro 4G (CK7n)
+# This device tree is provided by the [MillenniumOSS organization](https://github.com/MillenniumOSS)
 
 ## Device specifications
 
