@@ -477,8 +477,13 @@ PRODUCT_SOONG_NAMESPACES += \
     hardware/mediatek/libaedv \
     hardware/google/interfaces \
     hardware/google/pixel \
+    hardware/google/pixel/usb \
+    hardware/google/pixel/pixelstats \
     hardware/millennium/libtranlog
 
+PRODUCT_SOONG_NAMESPACES += \
+    hardware/google/pixel/power-libperfmgr
+    
 # Thermal
 PRODUCT_PACKAGES += \
     android.hardware.thermal-service.mediatek
