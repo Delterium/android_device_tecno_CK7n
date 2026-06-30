@@ -230,5 +230,7 @@ WIFI_HIDL_UNIFIED_SUPPLICANT_SERVICE_RC_ENTRY := true
 # Workaround to make lineage's soong generator work
 TARGET_KERNEL_SOURCE := $(COMMON_GKI_PATH)/kernel-headers
 
+DEXPREOPT_DISABLED_MODULES += mediatek-telephony-common
+
 # Inherit the proprietary files
 include vendor/tecno/CK7n/BoardConfigVendor.mk
