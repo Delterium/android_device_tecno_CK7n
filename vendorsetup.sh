@@ -1,5 +1,15 @@
 #!/bin/bash
 
+echo "- Disabling unused Qualcomm build files to prevent conflicts..."
+find vendor/qcom/ -name "Android.bp" -exec mv {} {}.disabled \; >/dev/null 2>&1
+find vendor/qcom/ -name "Android.mk" -exec mv {} {}.disabled \; >/dev/null 2>&1
+
+find hardware/qcom-caf/ -name "Android.bp" -exec mv {} {}.disabled \; >/dev/null 2>&1
+find hardware/qcom-caf/ -name "Android.mk" -exec mv {} {}.disabled \; >/dev/null 2>&1
+
+find hardware/qcom/ -name "Android.bp" -exec mv {} {}.disabled \; >/dev/null 2>&1
+find hardware/qcom/ -name "Android.mk" -exec mv {} {}.disabled \; >/dev/null 2>&1
+
 RET1=0
 RET2=0
 
