@@ -4,3 +4,6 @@ vendor_public_prop(vendor_camera_prop)
 # Fingerprint
 system_public_prop(system_goodix_prop)
 system_public_prop(vendor_fingerprint_prop)
+
+#OTG
+system_public_prop(vendor_otg_prop)
