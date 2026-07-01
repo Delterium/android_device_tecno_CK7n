@@ -539,6 +539,7 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_PACKAGES += \
     TecnoUtils
-    
+
+PRODUCT_OTA_ENFORCE_VINTF_KERNEL_REQUIREMENTS := false
 # Inherit the proprietary files
 $(call inherit-product, vendor/tecno/CK7n/CK7n-vendor.mk)
