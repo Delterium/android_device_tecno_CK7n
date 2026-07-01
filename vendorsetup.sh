@@ -3,6 +3,10 @@
 RET1=0
 RET2=0
 
+rm -rf vendor/qcom
+rm -rf hardware/qcom-caf
+rm -rf hardware/qcom
+
 cd frameworks/base
 if git log -50 --oneline | grep -q "Add HBM Trigger for Transsion UDFPS"; then
   echo "- frameworks/base is already patched, skipping."
