@@ -435,3 +435,7 @@ on property:sys.usb.config=midi && property:sys.usb.configfs=1
 
 on property:sys.usb.ffs.ready=1 && property:sys.usb.config=adb && property:sys.usb.configfs=1
     write /config/usb_gadget/g1/idProduct 0x0E8D
+
+on boot
+    chown system system /sys/devices/platform/odm/odm:tran_battery/OTG_CTL
+    chmod 0664 /sys/devices/platform/odm/odm:tran_battery/OTG_CTL
