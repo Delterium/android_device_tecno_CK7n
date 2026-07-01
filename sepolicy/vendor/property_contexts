@@ -43,3 +43,6 @@ persist.vendor.nfc.            u:object_r:vendor_nfc_prop:s0
 
 # TEE property
 vendor.tee.googlekey.status                          u:object_r:vendor_mtk_trustonic_tee_prop:s0
+
+# OTG
+persist.vendor.otg.enable      u:object_r:vendor_otg_prop:s0
